@@ -1,0 +1,47 @@
+body {
+    background-image: url('Images/background.jpg');
+    background-blend-mode: darken;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    margin: 0px;
+}
+
+.nav {
+    height: 120px;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:space-between;
+    padding-left: 20px;
+    padding-right: 50px;
+}
+
+.films {
+    background-color: rgb(240, 240, 240);
+    border-radius: 15px 15px 15px 15px ;
+    padding: 7px;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: 25px;
+    padding: 7px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-right: 400px;
+    color: black ;
+}
+
+.accueil{
+    background-color: rgb(240, 240, 240);
+    border-radius: 15px 15px 15px 15px ;
+    padding: 7px;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: 25px;
+    padding: 7px;
+    padding-left: 15px;
+    padding-right: 15px;
+    color: black ;
+}
