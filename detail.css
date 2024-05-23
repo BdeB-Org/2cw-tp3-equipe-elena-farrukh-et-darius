@@ -8,6 +8,26 @@ body {
     margin: 0px;
 }
 
+h1{
+    padding-top: 50px;
+    font-size: 35px;
+    text-align: center;
+    color: white;
+}
+
+h4{
+    padding-top: 15px;
+    font-size: 35px;
+    text-align: center;
+    color: white;
+}
+
+p{
+    font-size: 35px;
+    text-align: center;
+    color: white;
+}
+
 .nav {
     height: 120px;
     background-color: #ffffff;
