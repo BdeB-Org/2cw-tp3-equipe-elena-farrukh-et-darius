@@ -81,8 +81,35 @@ button:hover {
     color: black ;
 }
 
+.films:hover {
+    background-color: rgb(203, 203, 203);
+    border-radius: 15px 15px 15px 15px ;
+    padding: 7px;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: 25px;
+    padding: 7px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-right: 400px;
+    color: black ;
+}
+
 .accueil{
     background-color: rgb(240, 240, 240);
+    border-radius: 15px 15px 15px 15px ;
+    padding: 7px;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: 25px;
+    padding: 7px;
+    padding-left: 15px;
+    padding-right: 15px;
+    color: black ;
+}
+
+.accueil:hover {
+    background-color: rgb(203, 203, 203);
     border-radius: 15px 15px 15px 15px ;
     padding: 7px;
     padding-left: 15px;
