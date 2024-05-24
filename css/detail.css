@@ -1,0 +1,104 @@
+body {
+    background-image: url('../Images/background.jpg');
+    background-blend-mode: darken;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    margin: 0px;
+}
+
+h1 {
+    padding-top: 50px;
+    font-size: 35px;
+    text-align: center;
+    color: white;
+}
+
+h4 {
+    padding-top: 15px;
+    font-size: 35px;
+    text-align: center;
+    color: white;
+}
+
+p, ul {
+    font-size: 35px;
+    text-align: center;
+    color: white;
+    list-style-type: none;
+    padding: 0;
+}
+
+.nav {
+    height: 120px;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 50px;
+}
+
+.films, .accueil {
+    background-color: rgb(240, 240, 240);
+    border-radius: 15px;
+    padding: 7px 15px;
+    font-size: 25px;
+    color: black;
+    text-decoration: none;
+    margin-right: 400px;
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
+}
+
+.films:hover, .accueil:hover {
+    background-color: #e0e0e0; /* Slightly darker background on hover */
+    color: black;
+}
+
+a.titreFilm {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a.titreFilm:hover {
+    color: #e0e0e0;
+}
+
+form {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 15px;
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+form label, form textarea, form input {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+    font-size: 20px;
+    color: black;
+}
+
+form textarea, form input[type="number"] {
+    padding: 3px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+form input[type="submit"]:hover {
+    background-color: #45a049;
+}

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../css/detail.css" rel="stylesheet" type="text/css">
+    <title>Film Details</title>
+</head>
+<body>
+    <nav class="nav">
+        <a href="../index.html" class="lien-logo">
+            <img src="../Images/logo.png" alt="Logo CineScore" width="150px" height="50px" class="logo">
+        </a>
+        <a href="../index.html" class="accueil">Accueil</a>
+        <a href="films.html" class="films">Films</a>
+    </nav>
+
+    <h1 id="titre">Titre du film</h1>
+    <p id="genre">Genre</p>
+    <p id="maison_edition">Maison édition</p>
+
+    <h4>Acteurs</h4>
+    <ul id="listeActeurs"></ul>
+
+    
+
+    <h4>Critique</h4>
+    <p id="score">Score: </p>
+    <ul id="listeCommentaires"></ul>
+
+    <h4>Ajouter un commentaire</h4>
+    <form id="commentForm">
+        <label for="commentText">Commentaire:</label>
+        <textarea id="commentText" name="commentText" rows="4" cols="50" required></textarea><br>
+        <label for="commentScore">Score:</label>
+        <input type="number" id="commentScore" name="commentScore" min="1" max="5" required><br>
+        <input type="submit" value="Ajouter Commentaire">
+    </form>
+
+    <script src="../script/script_films.js"></script>
+    <script src="../script/detailFilm.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', (event) => {
+            const filmId = new URLSearchParams(window.location.search).get('id');
+            if (filmId) {
+                genererTables(() => remplirDetailFilm(filmId));
+            }
+
+            document.getElementById('commentForm').addEventListener('submit', function(event) {
+                event.preventDefault();
+                const filmId = new URLSearchParams(window.location.search).get('id');
+                ajouterCommentaire(filmId);
+            });
+        });
+    </script>
+</body>
+</html>

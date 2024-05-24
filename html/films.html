@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../css/films.css" rel="stylesheet" type="text/css">
+    <title>ListeFilms</title>
+</head>
+<body>
+    <nav class="nav">
+        <a href="../index.html" class="lien-logo">
+            <img src="../Images/logo.png" alt="Logo CineScore" width="150px" height="50px" class="logo">
+        </a>
+        <a href="../index.html" class="accueil">Accueil</a>
+        <a href="#" class="films">Films</a>
+    </nav>
+
+    <ul id="listeFilms"></ul>
+    
+    <script src="../script/script_films.js"></script>
+    <script src="../script/films.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', (event) => {
+            genererTables(() => remplirListeFilms("listeFilms"));
+        });
+    </script>
+</body>
+</html>
