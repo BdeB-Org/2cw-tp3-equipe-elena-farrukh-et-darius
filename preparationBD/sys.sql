@@ -7,6 +7,6 @@ GRANT CREATE SESSION, CREATE TABLE, CREATE PROCEDURE,
 CREATE VIEW, CREATE SEQUENCE, CREATE TRIGGER,
 COMMENT ANY TABLE TO RESTSCOTT;
 
-grant dba to resctscott;
+grant dba to restscott;
 
 /*Ensutie faut créer une connexion à sys.sql*/
